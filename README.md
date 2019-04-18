@@ -4,14 +4,14 @@ This repo contains the steps to re-create an application running on Heroku serve
 
 Table of contents:
  * Heroku
- ** Register / Login
- ** Connect credit/debit card
- ** Create 2 apps (UAT/Prod)
- ** Create a pipeline
- ** Configure addons (explain)
+  ** Register / Login
+  ** Connect credit/debit card
+  ** Create 2 apps (UAT/Prod)
+  ** Create a pipeline
+  ** Configure addons (explain)
  * Github
- ** Register / Signup
- ** Create repo
- ** Create team
- ** Assign members to team
+  ** Register / Signup
+  ** Create repo
+  ** Create team
+  ** Assign members to team
 
