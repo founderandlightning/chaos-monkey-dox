@@ -7,10 +7,14 @@ This is guide for creating github account, new repository and upload code from l
 
 ## Create new repository
 1. In the upper right corner, next to your avatar or identicon, click *+* and then select `New repository`.
-2. Name your repository hello-world.
+    ![picture alt](https://github.com//uCreateit/openmind-api/blob/master/public/images/logo.png?raw=true "Create new repository")
+
+2. Name your repository `chaos-monkey`.
 3. Write a short description.
-4. Select Initialize this repository with a README.
+4. Keep unselect `Initialize this repository with a README` Because actual project README.md will be used. (If still want to create own README then select it.) 
 5. Click Create repository.
+    ![picture alt](https://github.com//uCreateit/openmind-api/blob/master/public/images/logo.png?raw=true "Create new repository")
+
 
 ## Push Local code to repo
 1. Clone the existing app repository to your local:
