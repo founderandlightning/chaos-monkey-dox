@@ -3,12 +3,12 @@ This repo contains the steps to re-create an application running on Heroku serve
 
 
 ## Table of contents:
-* Github
-    * Register / Signup
-    * Create repo
+* [Github setup](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/github.md)
+    * [Signup/Login](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/github.md#loginsignup-on-github)
+    * [Create repo](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/github.md#create-new-repository)
     * Create team
     * Assign members to team
-    * Push Local code to repo
+    * [Push Local code to repo](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/github.md#push-local-code-to-repo)
 * Heroku
     * Register / Login
     * Connect credit/debit card
