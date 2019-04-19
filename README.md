@@ -2,7 +2,7 @@
 This repo contains the steps to re-create an application running on Heroku server (along with all the addons), on another Heroku app.
 
 
-##Table of contents:
+## Table of contents:
 * Heroku
  * Register / Login
  * Connect credit/debit card
