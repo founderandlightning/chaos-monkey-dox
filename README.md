@@ -9,13 +9,13 @@ This repo contains the steps to re-create an application running on Heroku serve
     * Create team
     * Assign members to team
     * [Push Local code to repo](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/github.md#push-local-code-to-repo)
-* Heroku
-    * Register / Login
-    * Connect credit/debit card
-    * Create 2 apps (UAT/Prod)
-    * Create a pipeline
-    * Add/Attach apps to pipeline
-    * Configure addons (explain)
+* [Heroku setup](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/heroku.md)
+    * [Register / Login](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/heroku.md#loginsignup-heroku)
+    * [Connect credit/debit card](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/heroku.md#connect-creditdebit-card-optional)
+    * [Create 2 apps (UAT/Prod)](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/heroku.md#create-2-apps-uatprod)
+    * [Create a pipeline](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/heroku.md#addattach-apps-to-pipeline)
+    * [Add/Attach apps to pipeline](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/heroku.md#addattach-apps-to-pipeline)
+    * [Configure addons (explain)](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/heroku.md#configure-addons-explain)
     * Add ENV variables
     * Add Procfile
     * Register/Add domain name
