@@ -10,14 +10,20 @@ For More info: [Getting Start on Heroku](https://devcenter.heroku.com/articles/g
 
 * Goto Profile icon on Top-right cornor.
 * Click on `Account Settings`.
+![picture alt](https://raw.githubusercontent.com/suri4ucreate/chaos-monkey-dox/master/img/heroku-settings.png "Account Settings")
 * Click on `Billing` Tab.
 * Add Credit Card.
+![picture alt](https://raw.githubusercontent.com/suri4ucreate/chaos-monkey-dox/master/img/heroku-billing.png "Billing - Add card")
 
 ### Create 2 apps (UAT/Prod)
 1. Go to Heroku app by cliking heroku logo from anywhere.
 2. Click on button `New` on right side(lower-top) and select `create new app`.
+![picture alt](https://raw.githubusercontent.com/suri4ucreate/chaos-monkey-dox/master/img/heroku-new-app.png "Create new app")
+
 3. Fill your app name (as per availability). You can add environment prefix to app name i.e. uat-app-name.
 You can also choose region as per project region. For ucreate we choose Europe.
+
+![picture alt](https://raw.githubusercontent.com/suri4ucreate/chaos-monkey-dox/master/img/heroku-new-app-create.png "Create new app")
 4. After click on `create app` button, your app will be created and show in app list.
 5. Similarly create another app for Production environment i.e. prod-app-name.
 
@@ -28,11 +34,13 @@ To create pipeline and attaching apps to it follow the below steps.
 1. Click on `New` button as we have done while creating new app.
 2. This time choose `Create new pipeline`.
 3. Name the pipeline.
+![picture alt](https://raw.githubusercontent.com/suri4ucreate/chaos-monkey-dox/master/img/create-pipeline.png "Create new pipeline")
 4. Search github repo for your app and connect it to pipeline. Click on `create pipeline`.
 5. Now it will show you pipeline details page. Here you can add Staginge app and production app which you have created in earlier.
     * Click on `Add app` button.
     * Seach name of your app for staging and select from list. It will be attached to pipeline on select.
     * Similarly search app name for production and attach it to project section of pipeline.
+![picture alt](https://raw.githubusercontent.com/suri4ucreate/chaos-monkey-dox/master/img/heroku-pipeline-detail.png "Create new pipeline")
 6. After attaching both apps to pipeline click on `create new pipeline`.
 Now your pipeline will show on dashboard in apps list.
 
