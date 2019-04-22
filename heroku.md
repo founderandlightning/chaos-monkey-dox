@@ -59,7 +59,7 @@ Few common and neccessary adons used at ucreate are:
 * PointDNS (for configuring domain name/SSL)
 
 Some common steps to configure adons are below:
-
+![picture alt](https://raw.githubusercontent.com/suri4ucreate/chaos-monkey-dox/master/img/heroku-resources.png "Heroku resources")
 1. Goto your app details for which you want to configure adon.
 2. Click on `Resources` tab.
 3. It will show you list of already configured Adons (empty if no adon configured yet).
@@ -73,9 +73,10 @@ You can App specific ENV variables on Heroku by visiting app detail page.
 
 * Goto `settings` tab
 * Click on `Reveal Config Vars`. It will show you already added ENV variables, some variables(adon related) automatically added when you configure Adons.
+![picture alt](https://raw.githubusercontent.com/suri4ucreate/chaos-monkey-dox/master/img/env-variables.png "Add ENV Variables")
 * To add new ENV variable scroll to end of the list and add ENV variable Key and Value in given inputs then click `Add` button.
 * You can edit ENV variable value any time.
-* To delet any ENV variable click on cross(X) icon ahead of variable.
+* To delete any ENV variable click on cross(X) icon ahead of variable.
 
 ### Add Procfile
 Procfile is a configuration file for Heroku app which tells Heroku the commands/tasks to execute before and post doployment i.e. 
