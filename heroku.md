@@ -59,3 +59,27 @@ Some common steps to configure adons are below:
 5. On click of adon it will show a popup, where you can select adon plan i.e. free, paid depends upon usage and features required.
 6. Click on `Provision` button and your adon will show in list of resources.
 7. For further configuration or settings click on particular adon in the list. It will take you to dashboard of that particular adon plateform.
+
+### Add ENV variables
+You can App specific ENV variables on Heroku by visiting app detail page.
+
+* Goto `settings` tab
+* Click on `Reveal Config Vars`. It will show you already added ENV variables, some variables(adon related) automatically added when you configure Adons.
+* To add new ENV variable scroll to end of the list and add ENV variable Key and Value in given inputs then click `Add` button.
+* You can edit ENV variable value any time.
+* To delet any ENV variable click on cross(X) icon ahead of variable.
+
+### Add Procfile
+Procfile is a configuration file for Heroku app which tells Heroku the commands/tasks to execute before and post doployment i.e. 
+
+- Your app’s web server (Configure Application path)
+- Run migrations
+- Dynos configuration
+
+Procfile is a file without extension.
+Format to write commands in Procfile is `<process type>: <command>`
+    where process can be type of `web, worker, urgentworker, clock` etc.
+
+For Heroku to use your Procfile, add the Procfile to the root directory of your application.
+
+
