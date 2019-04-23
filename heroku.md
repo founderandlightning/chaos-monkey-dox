@@ -68,7 +68,7 @@ Some common steps to configure adons are below:
 6. Click on `Provision` button and your adon will show in list of resources.
 7. For further configuration or settings click on particular adon in the list. It will take you to dashboard of that particular adon plateform.
 
-### Add ENV variables
+### [Add ENV variables](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/heroku.md#add-env-variables)
 You can App specific ENV variables on Heroku by visiting app detail page.
 
 * Goto `settings` tab
@@ -78,7 +78,7 @@ You can App specific ENV variables on Heroku by visiting app detail page.
 * You can edit ENV variable value any time.
 * To delete any ENV variable click on cross(X) icon ahead of variable.
 
-### Add Procfile
+### [Add Procfile](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/heroku.md#add-procfile)
 Procfile is a configuration file for Heroku app which tells Heroku the commands/tasks to execute before and post doployment i.e. 
 
 - Your app’s web server (Configure Application path)
@@ -91,4 +91,19 @@ Format to write commands in Procfile is `<process type>: <command>`
 
 For Heroku to use your Procfile, add the Procfile to the root directory of your application.
 
+### Register/Add domain name
+You can register any available domain name for any of domain register service provider like [Godaddy](https://in.godaddy.com/), [Bigrock](https://www.bigrock.in/dod#/netcom-domain-deals), [Hostgator](https://www.hostgator.in/domain-registration) etc.
+If you wish to register a free domain name(with limit choices) you can register you domain on [freenom.com](https://www.freenom.com/en/index.html), [dot.tk](www.dot.tk)
 
+After registering/purchasing domain-name follow below steps:
+![picture alt](https://raw.githubusercontent.com/suri4ucreate/chaos-monkey-dox/master/img/add-domain.png "Add Domain")
+
+1. Goto App details page and click on settings tab.
+2. Scroll down to `Domains and certificates` section and Click on `Add domain` button on right side.
+3. In popup write your domain name in given field and `Save changes`.
+Now you domain name will show in Table below `Add domain` button.
+
+![picture alt](https://raw.githubusercontent.com/suri4ucreate/chaos-monkey-dox/master/img/add-domain-name.png "Add domain name popup")
+
+You can add more than 1 domain names (upto 10,000) to single app.
+For more details refer to: [Rules on adding domains](https://devcenter.heroku.com/articles/custom-domains#rules-on-adding-domains)
