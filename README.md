@@ -16,11 +16,11 @@ This repo contains the steps to re-create an application running on Heroku serve
     * [Create a pipeline](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/heroku.md#addattach-apps-to-pipeline)
     * [Add/Attach apps to pipeline](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/heroku.md#addattach-apps-to-pipeline)
     * [Configure addons (explain)](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/heroku.md#configure-addons-explain)
-    * Add ENV variables
-    * Add Procfile
-    * Register/Add domain name
-    * Add PointDNS
-    * Add DNS records
+    * [Add ENV variables](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/heroku.md#add-env-variables)
+    * [Add Procfile](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/heroku.md#add-procfile)
+    * [Register/Add domain name](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/heroku.md#registeradd-domain-name)
+        * Add PointDNS
+        * Add DNS records
     * Generate/Configure SSL certificate
     * Connect Github repo
 * Circle CI

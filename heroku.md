@@ -68,7 +68,7 @@ Some common steps to configure adons are below:
 6. Click on `Provision` button and your adon will show in list of resources.
 7. For further configuration or settings click on particular adon in the list. It will take you to dashboard of that particular adon plateform.
 
-### [Add ENV variables](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/heroku.md#add-env-variables)
+### Add ENV variables
 You can App specific ENV variables on Heroku by visiting app detail page.
 
 * Goto `settings` tab
@@ -78,7 +78,7 @@ You can App specific ENV variables on Heroku by visiting app detail page.
 * You can edit ENV variable value any time.
 * To delete any ENV variable click on cross(X) icon ahead of variable.
 
-### [Add Procfile](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/heroku.md#add-procfile)
+### Add Procfile
 Procfile is a configuration file for Heroku app which tells Heroku the commands/tasks to execute before and post doployment i.e. 
 
 - Your app’s web server (Configure Application path)
