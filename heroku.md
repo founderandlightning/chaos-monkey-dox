@@ -116,8 +116,6 @@ PointDNS adon can be added to Heroku by following steps given in [Configure addo
 ### Add DNS records
 After adding, click on PointDNS adon from resources list. It will take you to PointDNS dashboard where you can see your added domain name under domains tab.
 
-![picture alt](https://raw.githubusercontent.com/suri4ucreate/chaos-monkey-dox/master/img/pointdns-domains.png "PointDNS Domains")
-
 Click on domain name for which you want to add DNS records.
 
 ![picture alt](https://raw.githubusercontent.com/suri4ucreate/chaos-monkey-dox/master/img/pointdns-nameserver-records.png "PointDNS Domain DNS records")
@@ -140,9 +138,25 @@ I am assuming that your have heard about SSL certificate or HTTPS and why we nee
 * Provide you domain name for which you want to generate an SSL certificate and Click on `Create Free SSL Certificate` button.
 
     **Note:** To create a wildcard certificate for multiple domains such as example.com enter `*.example.com example.com`.
+
+![picture alt](https://raw.githubusercontent.com/suri4ucreate/chaos-monkey-dox/master/img/sslforfree-manual-verification.png "SSLforfree Manual Verification for generating SSL certificate")
+
 * Choose Manual Verification(DNS) and Press Try Manual Verification.
 * Copy and add DNS records to PointDNS addon under your domain name.
+    
+    ![picture alt](https://raw.githubusercontent.com/suri4ucreate/chaos-monkey-dox/master/img/pointdns-add-record.png "PointDNS add new record")
+
+    * Click on CTA `+ Add record` on right top of DNS records list table.
+    * Select TXT from dropdown of `Record Type`.
+    * Copy Name - remove domain name suffix as it will add automatically.
+    * Put value in `Text` input and update TTL to 1 same as given in sslforfree.com.
+    * Click on `Add record`, now your record will show in DNS records list. You can edit it any time.
+
+    ![picture alt](https://raw.githubusercontent.com/suri4ucreate/chaos-monkey-dox/master/img/pointdns-add-record.png "PointDNS add new record")
 * Now click on Verification links given under DNS records on sslforfree.com (step 3)
+
+    ![picture alt](https://raw.githubusercontent.com/suri4ucreate/chaos-monkey-dox/master/img/sslforfree-txt-records.png "Copy TXT records to PointDNS domain records")
+
 * After successful verification, click on ”Download SSL certificate”.
 
 ### Configure
