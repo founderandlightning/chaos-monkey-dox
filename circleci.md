@@ -1,7 +1,7 @@
 # CircleCI setup
 CircleCI is tool for contineous integration (CI) of your project modules developed. CircleCI controls your deployement acting as gateway to pass, hence helps to automates the software development process.
 
-##Login/Signup
+## Login/Signup
 Signup to [CircleCI](https://circleci.com/signup/) with your existing github/bitbucket account. Choose as per the project repo you have.
 **Note:** We use github because heroku gives option to connect with github.
 If already has an account then login.
