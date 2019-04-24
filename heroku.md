@@ -164,8 +164,3 @@ I am assuming that your have heard about SSL certificate or HTTPS and why we nee
 * Click on configure SSL and choose Manual option in pop-up (to enable this option you must have paid dyno).
 * Add public key(.cert) and private key (.key) in 1st and 2nd step respectively. Then continue and save.
 * Make sure your CNAME or ALIAS records are added to PointDNS as per Added Domains in Heroku App settings.
-
-
-
-
-
