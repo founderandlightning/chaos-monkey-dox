@@ -21,9 +21,8 @@ This repo contains the steps to re-create an application running on Heroku serve
     * [Register/Add domain name](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/heroku.md#registeradd-domain-name)
         * Add PointDNS
         * Add DNS records
-    * Generate/Configure SSL certificate
-    * Connect Github repo
-* Circle CI
+    * [Generate/Configure SSL certificate](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/heroku.md#generateconfigure-ssl-certificate)
+* [Circle CI](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/circleci.md#circleci-setup)
     * CircleCI configuration i.e. config.yml
     * Add required ENV variables
 * Rollbar
