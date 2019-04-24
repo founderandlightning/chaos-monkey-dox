@@ -1,11 +1,11 @@
 # Heroku Setup
 For More info: [Getting Start on Heroku](https://devcenter.heroku.com/articles/getting-started-with-php)
 
-### Login/signup Heroku
+## Login/signup Heroku
 1. Navigate to [Heroku](https://www.heroku.com/)
 2. Login to Heroku (Create account if haven't already: [Free Signup](https://signup.heroku.com/))
 
-### Connect credit/debit card (Optional)
+## Connect credit/debit card (Optional)
  Attaching credit card is optional, you can also use free features. But to use Paid Dynos, Configure SSL, extra feature or more usage(than free limit) You must add credit card.
 
 * Goto Profile icon on Top-right cornor.
@@ -15,7 +15,7 @@ For More info: [Getting Start on Heroku](https://devcenter.heroku.com/articles/g
 * Add Credit Card.
 ![picture alt](https://raw.githubusercontent.com/suri4ucreate/chaos-monkey-dox/master/img/heroku-billing.png "Billing - Add card")
 
-### Create 2 apps (UAT/Prod)
+## Create 2 apps (UAT/Prod)
 1. Go to Heroku app by cliking heroku logo from anywhere.
 2. Click on button `New` on right side(lower-top) and select `create new app`.
 ![picture alt](https://raw.githubusercontent.com/suri4ucreate/chaos-monkey-dox/master/img/heroku-new-app.png "Create new app")
@@ -27,7 +27,7 @@ You can also choose region as per project region. For ucreate we choose Europe.
 4. After click on `create app` button, your app will be created and show in app list.
 5. Similarly create another app for Production environment i.e. prod-app-name.
 
-### Add/Attach apps to pipeline
+## Add/Attach apps to pipeline
 A pipeline is created to deploy changes to production manually at specific time after validating all changes on uat/staging environment.
 To create pipeline and attaching apps to it follow the below steps.
 
@@ -46,7 +46,7 @@ Now your pipeline will show on dashboard in apps list.
 
 **Note**: your apps will show no more in list. instead you can access apps from pipeline details page. But still you can directly search you app from search on dashboard/app list page.
 
-### Configure addons (explain)
+## Configure addons (explain)
 Heroku offers some addons(development tools) easy to integrate with few clicks.
 Few common and neccessary adons used at ucreate are:
 
@@ -68,7 +68,7 @@ Some common steps to configure adons are below:
 6. Click on `Provision` button and your adon will show in list of resources.
 7. For further configuration or settings click on particular adon in the list. It will take you to dashboard of that particular adon plateform.
 
-### Add ENV variables
+## Add ENV variables
 You can App specific ENV variables on Heroku by visiting app detail page.
 
 * Goto `settings` tab
@@ -78,7 +78,7 @@ You can App specific ENV variables on Heroku by visiting app detail page.
 * You can edit ENV variable value any time.
 * To delete any ENV variable click on cross(X) icon ahead of variable.
 
-### Add Procfile
+## Add Procfile
 Procfile is a configuration file for Heroku app which tells Heroku the commands/tasks to execute before and post doployment i.e. 
 
 - Your app’s web server (Configure Application path)
@@ -91,7 +91,7 @@ Format to write commands in Procfile is `<process type>: <command>`
 
 For Heroku to use your Procfile, add the Procfile to the root directory of your application.
 
-### Register/Add domain name
+## Register/Add domain name
 You can register any available domain name for any of domain register service provider like [Godaddy](https://in.godaddy.com/), [Bigrock](https://www.bigrock.in/dod#/netcom-domain-deals), [Hostgator](https://www.hostgator.in/domain-registration) etc.
 If you wish to register a free domain name(with limit choices) you can register you domain on [freenom.com](https://www.freenom.com/en/index.html), [dot.tk](www.dot.tk)
 
@@ -107,3 +107,30 @@ Now you domain name will show in Table below `Add domain` button.
 
 You can add more than 1 domain names (upto 10,000) to single app.
 For more details refer to: [Rules on adding domains](https://devcenter.heroku.com/articles/custom-domains#rules-on-adding-domains)
+
+### Add PointDNS
+PointDNS is adon offered by Heroku to manage DNS records for your app/domain.
+
+PointDNS adon can be added to Heroku by following steps given in [Configure addons](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/heroku.md#configure-addons-explain)
+
+### Add DNS records
+After adding, click on PointDNS adon from resources list. It will take you to PointDNS dashboard where you can see your added domain name under domains tab.
+
+![picture alt](https://raw.githubusercontent.com/suri4ucreate/chaos-monkey-dox/master/img/pointdns-domains.png "PointDNS Domains")
+
+Click on domain name for which you want to add DNS records.
+
+![picture alt](https://raw.githubusercontent.com/suri4ucreate/chaos-monkey-dox/master/img/pointdns-nameserver-records.png "PointDNS Domain DNS records")
+
+Copy NameServers(NS)(from PointDNS) records to domain registrar i.e. freenom
+
+![picture alt](https://raw.githubusercontent.com/suri4ucreate/chaos-monkey-dox/master/img/freenom-domains-list.png "Freenom Domain NS records")
+
+* Services -> My Domains
+* Click on `Manage Domain` button in row of your registered domain name.
+* Management Tools -> NameServers
+
+![picture alt](https://raw.githubusercontent.com/suri4ucreate/chaos-monkey-dox/master/img/freenom-domain-nameservers-records.png "Freenom Domain NS records")
+
+
+
