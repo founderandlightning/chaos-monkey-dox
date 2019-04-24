@@ -144,7 +144,7 @@ I am assuming that your have heard about SSL certificate or HTTPS and why we nee
 * Choose Manual Verification(DNS) and Press Try Manual Verification.
 * Copy and add DNS records to PointDNS addon under your domain name.
     
-    ![picture alt](https://raw.githubusercontent.com/suri4ucreate/chaos-monkey-dox/master/img/pointdns-add-record.png "PointDNS add new record")
+    ![picture alt](https://raw.githubusercontent.com/suri4ucreate/chaos-monkey-dox/master/img/pointdns-add-record-popup.png "PointDNS add new record")
 
     * Click on CTA `+ Add record` on right top of DNS records list table.
     * Select TXT from dropdown of `Record Type`.
