@@ -3,24 +3,24 @@ This repo contains the steps to re-create an application running on Heroku serve
 
 
 ## Table of contents:
-* Github
-    * Register / Signup
-    * Create repo
+* [Github setup](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/github.md)
+    * [Signup/Login](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/github.md#loginsignup-on-github)
+    * [Create repo](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/github.md#create-new-repository)
     * Create team
     * Assign members to team
-    * Push Local code to repo
-* Heroku
-    * Register / Login
-    * Connect credit/debit card
-    * Create 2 apps (UAT/Prod)
-    * Create a pipeline
-    * Add/Attach apps to pipeline
-    * Configure addons (explain)
-    * Add ENV variables
-    * Add Procfile
-    * Register/Add domain name
-    * Add PointDNS
-    * Add DNS records
+    * [Push Local code to repo](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/github.md#push-local-code-to-repo)
+* [Heroku setup](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/heroku.md)
+    * [Register / Login](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/heroku.md#loginsignup-heroku)
+    * [Connect credit/debit card](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/heroku.md#connect-creditdebit-card-optional)
+    * [Create 2 apps (UAT/Prod)](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/heroku.md#create-2-apps-uatprod)
+    * [Create a pipeline](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/heroku.md#addattach-apps-to-pipeline)
+    * [Add/Attach apps to pipeline](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/heroku.md#addattach-apps-to-pipeline)
+    * [Configure addons (explain)](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/heroku.md#configure-addons-explain)
+    * [Add ENV variables](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/heroku.md#add-env-variables)
+    * [Add Procfile](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/heroku.md#add-procfile)
+    * [Register/Add domain name](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/heroku.md#registeradd-domain-name)
+        * Add PointDNS
+        * Add DNS records
     * Generate/Configure SSL certificate
     * Connect Github repo
 * Circle CI
