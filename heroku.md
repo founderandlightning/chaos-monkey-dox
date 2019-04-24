@@ -132,5 +132,26 @@ Copy NameServers(NS)(from PointDNS) records to domain registrar i.e. freenom
 
 ![picture alt](https://raw.githubusercontent.com/suri4ucreate/chaos-monkey-dox/master/img/freenom-domain-nameservers-records.png "Freenom Domain NS records")
 
+## Generate/Configure SSL certificate
+I am assuming that your have heard about SSL certificate or HTTPS and why we need that for our domain/website. So here i will only explain how we can get a SSL certificate and configure it on Heroku. I am taking example of [sslforfree.com](https://www.sslforfree.com/) which provide free SSL certificate and supported by [letsencrypt.org](https://letsencrypt.org/) (Certificate Authority).
+
+### Generate
+* Go to [sslforfree.com](https://www.sslforfree.com/) to get free SSL certificate.
+* Provide you domain name for which you want to generate an SSL certificate and Click on `Create Free SSL Certificate` button.
+
+    **Note:** To create a wildcard certificate for multiple domains such as example.com enter `*.example.com example.com`.
+* Choose Manual Verification(DNS) and Press Try Manual Verification.
+* Copy and add DNS records to PointDNS addon under your domain name.
+* Now click on Verification links given under DNS records on sslforfree.com (step 3)
+* After successful verification, click on ”Download SSL certificate”.
+
+### Configure
+* Now go to Heroku app -> settings
+* Click on configure SSL and choose Manual option in pop-up (to enable this option you must have paid dyno).
+* Add public key(.cert) and private key (.key) in 1st and 2nd step respectively. Then continue and save.
+* Make sure your CNAME or ALIAS records are added to PointDNS as per Added Domains in Heroku App settings.
+
+
+
 
 
