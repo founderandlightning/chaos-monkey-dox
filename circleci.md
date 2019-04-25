@@ -29,7 +29,7 @@ You need to setup new project on circleCI for your app:
 
 **Note** : before clicking on `Start Building` you should add and push `config.yml` to github repo. Otherwise your first build will show as failed.
 
-## Add required ENV variables
+## Add ENV variables
 CircleCI env variables can be used in configuration file to supply credentials or other secret values(can't write on config file directly and push to github). Variables can be added to KEY, VALUE pairs and KEY can be used in config file with prefix $ i.e. $KEY.
 
 You can add ENV variables to CircleCI as below:
