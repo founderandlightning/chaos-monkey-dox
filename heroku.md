@@ -158,9 +158,25 @@ I am assuming that your have heard about SSL certificate or HTTPS and why we nee
     ![picture alt](https://raw.githubusercontent.com/suri4ucreate/chaos-monkey-dox/master/img/sslforfree-txt-records.png "Copy TXT records to PointDNS domain records")
 
 * After successful verification, click on ”Download SSL certificate”.
+* It will take few seconds to process your request and generate Cerificate and Public Key. 
+    
+    ![picture alt](https://raw.githubusercontent.com/suri4ucreate/chaos-monkey-dox/master/img/generated-ssl-files.png "Generate SSL files")
+
+You can either directly copy/paste these while Configuring SSL certificate OR download all files by click on `Download All SSL Certificate Files` (recommended) then upload .cert and .key files while configuring SSL.
 
 ### Configure
 * Now go to Heroku app -> settings
-* Click on configure SSL and choose Manual option in pop-up (to enable this option you must have paid dyno).
-* Add public key(.cert) and private key (.key) in 1st and 2nd step respectively. Then continue and save.
+
+![picture alt](https://raw.githubusercontent.com/suri4ucreate/chaos-monkey-dox/master/img/heroku-configure-ssl.png "Configure SSL")
+
+* Click on `Configure SSL` button (to enable this option you must have paid dyno).
+* Choose Manual option in pop-up.
+* Add public key(.cert) and private key (.key) in 1st and 2nd step respectively. Then continue and save. 
+
+![picture alt](https://raw.githubusercontent.com/suri4ucreate/chaos-monkey-dox/master/img/heroku-ssl-add-certificate-and-key.png "Upload/Copy Certificate and Key")
+
 * Make sure your CNAME or ALIAS records are added to PointDNS as per Added Domains in Heroku App settings.
+
+![picture alt](https://raw.githubusercontent.com/suri4ucreate/chaos-monkey-dox/master/img/heroku-ssl-configured.png "Successfully configured SSL certificate")
+
+**Note**: Generally SSL certificate reflects on domain within 5 mins of configuration. If not reflect heroku app details page after 10-15 mins check if SSL certifictae Expiry statement is still showing there. If not it means SSL is not configured properly, you can repeate the configure process again.
