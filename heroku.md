@@ -180,10 +180,12 @@ You can either directly copy/paste these while Configuring SSL certificate OR do
 ![picture alt](https://raw.githubusercontent.com/suri4ucreate/chaos-monkey-dox/master/img/heroku-configure-ssl.png "Configure SSL")
 
 * Click on `Configure SSL` button (to enable this option you must have paid dyno).
-* Choose Manual option in pop-up.
-* Add public key(.cert) and private key (.key) in 1st and 2nd step respectively. Then continue and save. 
+* Choose `Manual` option in pop-up.
+(You can also choose `Automatically` option in-case you want to use Heroku SSL certificate and auto-managed by Heroku itself. In this No need to add .cert and .key files.)
 
 ![picture alt](https://raw.githubusercontent.com/suri4ucreate/chaos-monkey-dox/master/img/heroku-ssl-add-certificate-and-key.png "Upload/Copy Certificate and Key")
+
+* Add public key(.cert) and private key (.key) in 1st and 2nd step respectively. Then continue and save. 
 
 * Make sure your CNAME or ALIAS records are added to PointDNS as per Added Domains in Heroku App settings.
 
