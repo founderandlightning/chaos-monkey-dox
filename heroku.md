@@ -6,14 +6,15 @@ For More info: [Getting Start on Heroku](https://devcenter.heroku.com/articles/g
 2. Login to Heroku (Create account if haven't already: [Free Signup](https://signup.heroku.com/))
 
 ## Connect credit/debit card (Optional)
- Attaching credit card is optional, you can also use free features. But to use Paid Dynos, Configure SSL, extra feature or more usage(than free limit) You must add credit card.
+ Attaching credit/debit card is optional, you can also use free features. But to use Paid Dynos, Configure SSL, extra feature or more usage(than free limit) You must add credit/debit card.
 
 * Goto Profile icon on Top-right cornor.
 * Click on `Account Settings`.
 ![picture alt](https://raw.githubusercontent.com/suri4ucreate/chaos-monkey-dox/master/img/heroku-settings.png "Account Settings")
 * Click on `Billing` Tab.
-* Add Credit Card.
+* Add Credit/Debit Card.
 ![picture alt](https://raw.githubusercontent.com/suri4ucreate/chaos-monkey-dox/master/img/heroku-billing.png "Billing - Add card")
+* Fill all the required information in form and save.
 
 ## Create 2 apps (UAT/Prod)
 1. Go to Heroku app by cliking heroku logo from anywhere.
