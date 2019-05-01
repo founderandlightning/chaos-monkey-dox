@@ -6,14 +6,15 @@ For More info: [Getting Start on Heroku](https://devcenter.heroku.com/articles/g
 2. Login to Heroku (Create account if haven't already: [Free Signup](https://signup.heroku.com/))
 
 ## Connect credit/debit card (Optional)
- Attaching credit card is optional, you can also use free features. But to use Paid Dynos, Configure SSL, extra feature or more usage(than free limit) You must add credit card.
+ Attaching credit/debit card is optional, you can also use free features. But to use Paid Dynos, Configure SSL, extra feature or more usage(than free limit) You must add credit/debit card.
 
 * Goto Profile icon on Top-right cornor.
 * Click on `Account Settings`.
 ![picture alt](https://raw.githubusercontent.com/suri4ucreate/chaos-monkey-dox/master/img/heroku-settings.png "Account Settings")
 * Click on `Billing` Tab.
-* Add Credit Card.
+* Add Credit/Debit Card.
 ![picture alt](https://raw.githubusercontent.com/suri4ucreate/chaos-monkey-dox/master/img/heroku-billing.png "Billing - Add card")
+* Fill all the required information in form and save.
 
 ## Create 2 apps (UAT/Prod)
 1. Go to Heroku app by cliking heroku logo from anywhere.
@@ -85,6 +86,15 @@ Procfile is a configuration file for Heroku app which tells Heroku the commands/
 - Run migrations
 - Dynos configuration
 
+Sample Procfile code:
+
+```
+    release: php artisan migrate --force
+    web: vendor/bin/heroku-php-apache2 public/
+    worker: php artisan queue:listen --tries=3 --timeout=840
+    queue: php artisan queue:work
+
+```
 Procfile is a file without extension.
 Format to write commands in Procfile is `<process type>: <command>`
     where process can be type of `web, worker, urgentworker, clock` etc.
@@ -170,10 +180,12 @@ You can either directly copy/paste these while Configuring SSL certificate OR do
 ![picture alt](https://raw.githubusercontent.com/suri4ucreate/chaos-monkey-dox/master/img/heroku-configure-ssl.png "Configure SSL")
 
 * Click on `Configure SSL` button (to enable this option you must have paid dyno).
-* Choose Manual option in pop-up.
-* Add public key(.cert) and private key (.key) in 1st and 2nd step respectively. Then continue and save. 
+* Choose `Manual` option in pop-up.
+(You can also choose `Automatically` option in-case you want to use Heroku SSL certificate and auto-managed by Heroku itself. In this No need to add .cert and .key files.)
 
 ![picture alt](https://raw.githubusercontent.com/suri4ucreate/chaos-monkey-dox/master/img/heroku-ssl-add-certificate-and-key.png "Upload/Copy Certificate and Key")
+
+* Add public key(.cert) and private key (.key) in 1st and 2nd step respectively. Then continue and save. 
 
 * Make sure your CNAME or ALIAS records are added to PointDNS as per Added Domains in Heroku App settings.
 
