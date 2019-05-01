@@ -85,6 +85,15 @@ Procfile is a configuration file for Heroku app which tells Heroku the commands/
 - Run migrations
 - Dynos configuration
 
+Sample Procfile code:
+
+```
+    release: php artisan migrate --force
+    web: vendor/bin/heroku-php-apache2 public/
+    worker: php artisan queue:listen --tries=3 --timeout=840
+    queue: php artisan queue:work
+
+```
 Procfile is a file without extension.
 Format to write commands in Procfile is `<process type>: <command>`
     where process can be type of `web, worker, urgentworker, clock` etc.
