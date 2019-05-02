@@ -6,11 +6,6 @@ Signup to [CircleCI](https://circleci.com/signup/) with your existing github/bit
 **Note:** We use github because heroku gives option to connect with github.
 If already has an account then login.
 
-## CircleCI configuration
-CiclCI is configured using `config.yml` file generally kept in folder `.cirlceci` in root directory of app/project. complete file relative path is `.circleci/config.yml` .
-
-Know more about format of config.yml [Sample config.yml Files](https://circleci.com/docs/2.0/sample-config/#section=configuration)  
-
 ## Project Setup
 You need to setup new project on circleCI for your app:
 
@@ -28,6 +23,14 @@ You need to setup new project on circleCI for your app:
 8. Now your project will show in Workflows.
 
 **Note** : before clicking on `Start Building` you should add and push `config.yml` to github repo. Otherwise your first build will show as failed.
+
+
+## CircleCI configuration
+CiclCI is configured using `config.yml` file generally kept in folder `.cirlceci` in root directory of app/project. complete file relative path is `.circleci/config.yml` .
+
+Sample [.circleci/config.yml](.circleci/config.yml) for laravel project.
+
+Know more about format of config.yml [Sample config.yml Files](https://circleci.com/docs/2.0/sample-config/#section=configuration) 
 
 ## Add ENV variables
 CircleCI env variables can be used in configuration file to supply credentials or other secret values(can't write on config file directly and push to github). Variables can be added to KEY, VALUE pairs and KEY can be used in config file with prefix $ i.e. $KEY.
