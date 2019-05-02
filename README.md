@@ -24,8 +24,8 @@ This repo contains the steps to re-create an application running on Heroku serve
     * [Generate/Configure SSL certificate](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/heroku.md#generateconfigure-ssl-certificate)
 * [Circle CI](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/circleci.md#circleci-setup)
     * [Login/Signup](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/circleci.md#loginsignup)
-    * [CircleCI configuration](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/circleci.md#circleci-configuration) i.e. config.yml
     * [Project Setup](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/circleci.md#project-setup)
+    * [CircleCI configuration](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/circleci.md#circleci-configuration) i.e. config.yml
     * [Add ENV variables](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/circleci.md#add-env-variables)
 * Rollbar
     * Integrate with Trello and Slack
