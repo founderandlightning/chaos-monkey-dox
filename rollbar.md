@@ -31,4 +31,14 @@ It will show you available options to get notifications from rollbar(for error r
 
 ![picture alt](https://raw.githubusercontent.com/suri4ucreate/chaos-monkey-dox/master/img/rollbar-notifications.png "Rollbar notification setup")
 
+### Slack
+1. Click on Slack section
+2. Click on `Add to Slack` button.
+3. Select your project `Channel or Group` from dropdown. Then click on `Enable Slack Integration`.
+
+![picture alt](https://raw.githubusercontent.com/suri4ucreate/chaos-monkey-dox/master/img/rollbar-slack-setup.png "Rollbar notification setup")
+
+### Trello
+Rollbar can create new card/story in your Board whenever it receive any Exception or Error in project.
+
 ## Generate and Verify Error reporting

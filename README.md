@@ -32,8 +32,12 @@ This repo contains the steps to re-create an application running on Heroku serve
     * Integrate with Trello and Slack
     * Generate and Verify Error reporting
 * New Relic
+    * Setup
+    * Reporting & Analysis
+    * alert for High Apdex Score
 * Papertrail
-    * Setup Events Alerts
+    * Setup
+    * Events Alerts
 * Pre-Commit Hooks
     * CodeSniffer
     * MessDetector
