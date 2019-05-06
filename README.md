@@ -24,15 +24,20 @@ This repo contains the steps to re-create an application running on Heroku serve
     * [Generate/Configure SSL certificate](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/heroku.md#generateconfigure-ssl-certificate)
 * [Circle CI](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/circleci.md#circleci-setup)
     * [Login/Signup](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/circleci.md#loginsignup)
-    * [CircleCI configuration](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/circleci.md#circleci-configuration) i.e. config.yml
     * [Project Setup](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/circleci.md#project-setup)
+    * [CircleCI configuration](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/circleci.md#circleci-configuration) i.e. config.yml
     * [Add ENV variables](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/circleci.md#add-env-variables)
-* Rollbar
+* [Rollbar](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/rollbar.md)
+    * Setup
     * Integrate with Trello and Slack
     * Generate and Verify Error reporting
 * New Relic
+    * Setup
+    * Reporting & Analysis
+    * alert for High Apdex Score
 * Papertrail
-    * Setup Events Alerts
+    * Setup
+    * Events Alerts
 * Pre-Commit Hooks
     * CodeSniffer
     * MessDetector
