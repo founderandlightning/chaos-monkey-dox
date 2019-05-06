@@ -7,3 +7,10 @@ On heroku server, Go to the Heroku's Add-on page for New Relic, select the appro
 your application's performance and the level of satisfaction.
 
 ![picture alt](https://github.com/shivali-ucreate/chaos-monkey-dox/blob/master/img/newrelic-firstscreen.png "New relic first screen")
+
+Click on Add more button.
+
+2. Install the agent:  A New Relic agent is a software that you install on a host or in an application that sends performance data to New Relic. New Relic uses different agents for different products and coding languages (Go, Java, .NET, Node.js, PHP, Python, or Ruby) for your app.Specific installation steps vary, based on your application's agent language e.g Select PHP. 
+
+![picture alt](https://github.com/shivali-ucreate/chaos-monkey-dox/blob/master/img/newrelic-agent.png "New relic APM screen")
+
