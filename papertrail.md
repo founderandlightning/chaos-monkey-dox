@@ -47,5 +47,26 @@ When viewing older logs, click the down arrow or scroll down to return to curren
 
 ![picture alt](https://github.com/shivali-ucreate/chaos-monkey-dox/blob/master/img/current-event.png "Papertrail Current Event")
 
+## Search
+
+Search is integrated into Papertrail’s event viewer:
+
+![picture alt](https://github.com/shivali-ucreate/chaos-monkey-dox/blob/master/img/search.png "Search")
+
+Find anything just by typing what you know. If you’ve used Google search, Papertrail search works much the same way, including phrases ("), logical operators (AND, OR), and exclusion (-).
+Click the upper right Help menu to see example searches without leaving the log viewer
+
+## Save searches and create alerts
+
+As your team uses Papertrail more, some searches will probably be worth accessing again, receiving in email, graphing, or otherwise retaining.
+After entering a search query, click Save Search to retain the query:
+
+![picture alt](https://github.com/shivali-ucreate/chaos-monkey-dox/blob/master/img/save-search.png "Save Search")
+
+## Time seek
+
+To seek directly to any date or time in the searchable history, click the clock icon:
+
+![picture alt](https://github.com/shivali-ucreate/chaos-monkey-dox/blob/master/img/time-seek.png "Time Seek")
 
 
