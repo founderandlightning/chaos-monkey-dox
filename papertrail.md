@@ -27,5 +27,25 @@ Some default types of events  are defined by heroku, useful to track things whic
 
 ![picture alt](https://github.com/shivali-ucreate/chaos-monkey-dox/blob/master/img/papertrail-events.png "Papertrail Events")
 
+When you arrive in the log viewer, Papertrail is showing events as they happen. It’s real te, aims if you were logged directly into a system (or hundreds of systems). Logs are live.
+
+## Pause logs
+
+To pause live logs, scroll up or click PAUSE:
+
+![picture alt](https://github.com/shivali-ucreate/chaos-monkey-dox/blob/master/img/pause-event.png "Papertrail Pause Event")
+
+## Resume live tail
+
+When paused on current logs, click LIVE to resume live tail:
+
+![picture alt](https://github.com/shivali-ucreate/chaos-monkey-dox/blob/master/img/resume-event.png "Papertrail Resume Event")
+
+## Return to current and resume live tail
+
+When viewing older logs, click the down arrow or scroll down to return to current logs and resume live tail.
+
+![picture alt](https://github.com/shivali-ucreate/chaos-monkey-dox/blob/master/img/current-event.png "Papertrail Current Event")
+
 
 
