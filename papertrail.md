@@ -16,7 +16,8 @@ Adding log management to an application provides truly real time app visibility,
 ## Setup
 On heroku server, go to the Heroku's Add-on page for Papertrail. Select the appropriate subscription plan and Heroku does the job for you to configure papertrail as an add-on.
 
+![picture alt](https://github.com/shivali-ucreate/chaos-monkey-dox/blob/master/img/papertrail-plan.png "Papertrail subscription plan")
+
 ## How to Use Papertrail: 
 For using papertrail, there is only a small set of instructions. Papertrail keeps on collecting the logs, What we have to do is to be familiar with the environment. Let’s take a look at the components.
-
 
