@@ -21,3 +21,11 @@ On heroku server, go to the Heroku's Add-on page for Papertrail. Select the appr
 ## How to Use Papertrail: 
 For using papertrail, there is only a small set of instructions. Papertrail keeps on collecting the logs, What we have to do is to be familiar with the environment. Let’s take a look at the components.
 
+## Event viewer:
+The simplest form, where you will be seeing lots of text. Each line representing the access log of any request. It contains some useful data like IP address of dyno, id, protocols type, time of request, url.
+Some default types of events  are defined by heroku, useful to track things which is best suited to heroku setup.The event viewer, also called the log viewer, is a core part of Papertrail.
+
+![picture alt](https://github.com/shivali-ucreate/chaos-monkey-dox/blob/master/img/papertrail-events.png "Papertrail Events")
+
+
+
