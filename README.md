@@ -31,11 +31,11 @@ This repo contains the steps to re-create an application running on Heroku serve
     * Setup
     * Integrate with Trello and Slack
     * Generate and Verify Error reporting
-* New Relic
+* [New Relic](https://github.com/shivali-ucreate/chaos-monkey-dox/blob/master/newrelic.md)
     * Setup
     * Reporting & Analysis
     * alert for High Apdex Score
-* Papertrail
+* [Papertrail](https://github.com/shivali-ucreate/chaos-monkey-dox/blob/master/papertrail.md)
     * Setup
     * Events Alerts
 * Pre-Commit Hooks
