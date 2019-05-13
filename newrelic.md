@@ -19,13 +19,15 @@ Copy the license key and add it to environment variables named `NEW_RELIC_LICENS
 
 4. Restart dynos, Generate some traffic to your app and and see the results in 5 minutes.
 
-## View your performance data
+## View Performance Data
 
 To view data about application performance, end user experience, and server performance:
 1. From your Heroku dashboard, select the app(production or staging) that has the New Relic add-on installed.
 2. From your list of add-ons, select the New Relic icon.
 3. After being redirected via SSO to your account(production or staging app) on the New Relic site.
 4. Click on the application, it will take you to the Dashboard(APM) for Monitoring.
+
+## Alert for High Apdex Score
 
 
 
