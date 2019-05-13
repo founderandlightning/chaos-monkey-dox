@@ -44,6 +44,6 @@ This repo contains the steps to re-create an application running on Heroku serve
     * [Save Searches](https://github.com/jdecode/chaos-monkey-dox/blob/master/papertrail.md#save-searches)
     * [Create Events Alerts](https://github.com/jdecode/chaos-monkey-dox/blob/master/papertrail.md#create-events-alerts)
 * [Pre-Commit Hooks](https://github.com/jdecode/chaos-monkey-dox/blob/master/pre-commit.md)
-    * CodeSniffer
-    * MessDetector
-    * PHPUnit/TDD
+    * [CodeSniffer](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/pre-commit.md#codesniffer)
+    * [MessDetector](pre-commit.md#messdetector)
+    * [PHPUnit/TDD](https://github.com/suri4ucreate/chaos-monkey-dox/blob/master/pre-commit.md#phpunittdd)
