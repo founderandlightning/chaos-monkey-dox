@@ -39,6 +39,27 @@ It will show you available options to get notifications from rollbar(for error r
 ![picture alt](https://raw.githubusercontent.com/suri4ucreate/chaos-monkey-dox/master/img/rollbar-slack-setup.png "Rollbar notification setup")
 
 ### Trello
-Rollbar can create new card/story in your Board whenever it receive any Exception or Error in project.
+1. Click on Trello section
+
+![picture alt](https://github.com/shivali-ucreate/chaos-monkey-dox/blob/master/img/select-trello.png "Trello integration")
+
+2. Click on trello button.
+3. Now on next screen click on connect button.
+![picture alt](https://github.com/shivali-ucreate/chaos-monkey-dox/blob/master/img/connect-trello.png "Connect to trello")
+4. Now it will ask to login in trello.
+
+![picture alt](https://github.com/shivali-ucreate/chaos-monkey-dox/blob/master/img/login-trello.png "login to trello")
+5. After login you can select the project board where you want to send notifications.
+
+![picture alt](https://github.com/shivali-ucreate/chaos-monkey-dox/blob/master/img/choose-trello-board.png "Choose trello board")
+
 
 ## Generate and Verify Error reporting
+
+1. You can test notifications by press "Send Test Notification" button.
+
+![picture alt](https://github.com/shivali-ucreate/chaos-monkey-dox/blob/master/img/send-test-notification.png "Send test notifications")
+
+2. It will create card on the Rollbar section for the chosen project.
+
+![picture alt](https://github.com/shivali-ucreate/chaos-monkey-dox/blob/master/img/trello-card.png "Test notifications")
