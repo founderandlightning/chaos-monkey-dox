@@ -32,7 +32,7 @@ This is guide for creating github account, new repository and upload code from l
 ```
 5. Check your repo on github and verify if now its showing your project files.
 
-##Create an Organization
+## Create an Organization
 1. In the top right corner of GitHub, click `+` next to profile picture, then click on `New Organization`.
     ![picture alt](img/github-new-organization.png "Create new organization")
 2. Fill the Organization name (as per availability) and billing email.
@@ -42,7 +42,7 @@ This is guide for creating github account, new repository and upload code from l
 5. In step 2, one can invite your organization members.
 6. In Step 3, you team for your new team.
 
-##Creating a team
+## Creating a team
 You can create independent or nested teams to manage repository permissions and mentions for groups of people.
 
 Only organization owners and maintainers of a parent team can create a new child team under a parent. Owners can also restrict creation permissions for all teams in an organization. For more information, see "[Setting team creation permissions in your organization.](https://help.github.com/en/articles/setting-team-creation-permissions-in-your-organization)"
@@ -64,7 +64,7 @@ Only organization owners and maintainers of a parent team can create a new child
 6. Optionally, in the "Description" field, type a description of the team. if you're creating a child team, use the drop-down menu to choose a parent team for your new team.
 7. Decide whether the team will be visible or secret then click on `Create team`
 
-##Add Member to a team
+## Add Member to a team
 You can add any new member to you team which is already your organization member.
 1. Go to Your Organization dashbaord.
 2. Click on `Members` tab from top right secondary menu.
