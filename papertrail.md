@@ -1,60 +1,48 @@
 # Papertrail
 Papertrail is a cloud based platform for providing hosted log aggregation and management, including real-time tail, search, and alerts on application and platform logs.
 
-## Why Papertrail
-
-1. It logs all actions performed by your application/website 
-2. We can search through all logs, very quickly and without the need to download any log files to our local systems
-3. We can search by using keywords eg “status=500” to get all the errors that happened
-4. We can search for specific Heroku errors like “H21” to see all timeouts. You will learn more about heroku errors later.
-5. We can set up alerts when certain actions happen. Eg. a 404 is reached, this sends an email to the dev team to fix the problem.
-6. It can work as an audit trail of what happened on the app/website and we can recreate the steps done by the users.
-7. It helps when our users complain that at eg. 15:23 something was not working. We can search for this exact time and see all calls to and from the app. We can see if everything was ok or not.
-
-Adding log management to an application provides truly real time app visibility, faster troubleshooting, elegant alerting optimized for Heroku, and painless archives. Papertrail is accessible via Web browser, command-line client, and HTTP API. 
-
 ## Setup
-On heroku server, go to the Heroku's Add-on page for Papertrail. Select the appropriate subscription plan and Heroku does the job for you to configure papertrail as an add-on.
+To integrate Papertrail with your project you may follow below steps:
 
-![picture alt](https://github.com/shivali-ucreate/chaos-monkey-dox/blob/master/img/papertrail-plan.png "Papertrail subscription plan")
+1. Add `Papertrail` as heroku addon as explained in [Configure addons (explain)](heroku.md#configure-addons-explain)
+ 
+2. Select the appropriate subscription plan (default Choklad-Free) and click on `Provision` .\
 
-## How to Use Papertrail: 
-For using papertrail, there is only a small set of instructions. Papertrail keeps on collecting the logs, What we have to do is to be familiar with the environment. Let’s take a look at the components.
+    ![picture alt](img/papertrail-plan.png "Papertrail subscription plan")
 
-## Event viewer:
-The simplest form, where you will be seeing lots of text. Each line representing the access log of any request. It contains some useful data like IP address of dyno, id, protocols type, time of request, url.
-Some default types of events  are defined by heroku, useful to track things which is best suited to heroku setup.The event viewer, also called the log viewer, is a core part of Papertrail.
+Heroku does the rest of job for you to configure papertrail as an add-on.
 
-![picture alt](https://github.com/shivali-ucreate/chaos-monkey-dox/blob/master/img/papertrail-events.png "Papertrail Events")
+## Access Papertrail:
 
-When you arrive in the log viewer, Papertrail is showing events as they happen. It’s real te, aims if you were logged directly into a system (or hundreds of systems). Logs are live.
+To access papertrail and check if it is itegrated with App, click on `Papertrail` from already configured adons list. It will take you to papertrail Dashboard in new tab.
+1. When you access `Papertrail` first-time it will show you a popup and ask to subscribe for Events alert. So provide your email ID on which you wish to get alerts for any error/warning logs.
+2. After Subscribing you will on Events viewer page(default) where its showing live Logs trail.
 
-## Pause logs
+![picture alt](img/papertrail-events.png "Papertrail Events")
 
-To pause live logs, scroll up or click PAUSE:
+## Create Events Alerts
+You can create/configure events alerts directly from Events page. It contains some useful data about request like IP address of dyno, id, protocols type, time, url.
 
-![picture alt](https://github.com/shivali-ucreate/chaos-monkey-dox/blob/master/img/pause-event.png "Papertrail Pause Event")
+Although it has some default types of events are defined by Heroku, useful to track things which is best suited to heroku setup.
+If you wish to get alerts or notify for some specific activity/request i.e. request to login page.
 
-## Resume live tail
+### Search
 
-When paused on current logs, click LIVE to resume live tail:
+Use papertrail event search to configure event alerts and follow below steps
 
-![picture alt](https://github.com/shivali-ucreate/chaos-monkey-dox/blob/master/img/resume-event.png "Papertrail Resume Event")
+1. Search the any desired event/request detail from IP address of dyno, id, protocols type, time, url. Here i have used URL for `/login` request.
 
-## Return to current and resume live tail
+![picture alt](img/papertrail-search.png "Search")
 
-When viewing older logs, click the down arrow or scroll down to return to current logs and resume live tail.
+2. Click on `Search` button next to search bar. It will show you list of recent events related to searched parameter i.e. URL. 
+3. Now click on `Save Search`. It will open a popup, give desired name for alert and click on `Save & Setup an Alert`. You will be redirect to setup alert page (it will take few seconds to save and redirect).
+![picture alt](img/papertrail-save-search.png "Save Search")
 
-![picture alt](https://github.com/shivali-ucreate/chaos-monkey-dox/blob/master/img/current-event.png "Papertrail Current Event")
+4. On next page just click on `Update Search`.
+5. After succesful saving, click on `Email` section under `Create an Alert` heading.
 
-## Search
+    ![picture alt](img/papertrail-create-alert "Create Alert")
 
-Search is integrated into Papertrail’s event viewer:
-
-![picture alt](https://github.com/shivali-ucreate/chaos-monkey-dox/blob/master/img/search.png "Search")
-
-Find anything just by typing what you know. If you’ve used Google search, Papertrail search works much the same way, including phrases ("), logical operators (AND, OR), and exclusion (-).
-Click the upper right Help menu to see example searches without leaving the log viewer.
 ### Save searches
 
 As your team uses Papertrail more, some searches will probably be worth accessing again, receiving in email, graphing, or otherwise retaining.
@@ -62,9 +50,8 @@ After entering a search query, click Save Search to retain the query:
 
 ![picture alt](https://github.com/shivali-ucreate/chaos-monkey-dox/blob/master/img/save-search.png "Save Search")
 
-### Create Events Alerts
 
-## Time seek
+### Time seek
 
 To seek directly to any date or time in the searchable history, click the clock icon:
 
