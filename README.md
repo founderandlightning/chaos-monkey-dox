@@ -5,9 +5,10 @@ This repo contains the steps to re-create an application running on Heroku serve
 ## Table of contents:
 * [Github setup](github.md)
     * [Signup/Login](github.md#loginsignup-on-github)
-    * [Create repo](github.md#create-new-repository)
-    * [Create team](github.md#create-new-repository)
-    * [Assign members to team](github.md#create-new-repository)
+    * [Create Repository](github.md#create-new-repository)
+    * [Create an Organization](github.md#create-an-organization)
+    * [Create Team](github.md#creating-a-team)
+    * [Assign members to team](github.md#add-member-to-a-team)
     * [Push Local code to repo](github.md#push-local-code-to-repo)
 * [Heroku setup](heroku.md)
     * [Register / Login](heroku.md#loginsignup-heroku)
