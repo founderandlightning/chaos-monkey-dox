@@ -27,7 +27,6 @@ Although it has some default types of events are defined by Heroku, useful to tr
 If you wish to get alerts or notify for some specific activity/request i.e. request to login page.
 
 ### Search
-
 Use papertrail event search to configure event alerts and follow below steps
 
 1. Search the any desired event/request detail from IP address of dyno, id, protocols type, time, url. Here i have used URL for `/login` request.
@@ -39,22 +38,29 @@ Use papertrail event search to configure event alerts and follow below steps
 ![picture alt](img/papertrail-save-search.png "Save Search")
 
 4. On next page just click on `Update Search`.
-5. After succesful saving, click on `Email` section under `Create an Alert` heading.
+5. After succesful saving, click on `Email` section under `Create an Alert` heading. It will redirect you to create alert page.
 
     ![picture alt](img/papertrail-create-alert.png "Create Alert")
+6. Choose Alert Conditions are per requirement:
+    * **Frequency** of alert (once in a day is defualt)
+    * When to trigger new alert.
+    * Choose Timezone (preffer timezone of your application)
+
+    ![picture alt](img/papertrail-alert-email.png "Create Alert")
+
+7. Fill the email address or comma separated multiple emails to which you want to receive alert.
+8. Click on `Create Alert` . It will save you alert and you will receive email notification (as per chooses conditiions) whenever event/request occurs.
 
 ### Save searches
-
 As your team uses Papertrail more, some searches will probably be worth accessing again, receiving in email, graphing, or otherwise retaining.
 After entering a search query, click Save Search to retain the query:
 
-![picture alt](https://github.com/shivali-ucreate/chaos-monkey-dox/blob/master/img/save-search.png "Save Search")
+![picture alt](img/save-search.png "Save Search")
 
 
 ### Time seek
-
 To seek directly to any date or time in the searchable history, click the clock icon:
 
-![picture alt](https://github.com/shivali-ucreate/chaos-monkey-dox/blob/master/img/time-seek.png "Time Seek")
+![picture alt](img/time-seek.png "Time Seek")
 
 

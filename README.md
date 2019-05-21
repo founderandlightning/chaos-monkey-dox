@@ -44,6 +44,7 @@ This repo contains the steps to re-create an application running on Heroku serve
     * [Create Events Alerts](papertrail.md#create-events-alerts)
         * [Search](papertrail.md#search)
         * [Save Searches](papertrail.md#save-searches)
+        * [Time seek](papertrail.md#time-seek)
 * [Pre-Commit Hooks](pre-commit.md)
     * [CodeSniffer](pre-commit.md#codesniffer)
     * [MessDetector](pre-commit.md#messdetector)
