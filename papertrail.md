@@ -39,8 +39,8 @@ Use papertrail event search to configure event alerts and follow below steps
 
 4. On next page just click on `Update Search`.
 5. After succesful saving, click on `Email` section under `Create an Alert` heading. It will redirect you to create alert page.
-
     ![picture alt](img/papertrail-create-alert.png "Create Alert")
+
 6. Choose Alert Conditions are per requirement:
     * **Frequency** of alert (once in a day is defualt)
     * When to trigger new alert.

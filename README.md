@@ -46,6 +46,7 @@ This repo contains the steps to re-create an application running on Heroku serve
         * [Save Searches](papertrail.md#save-searches)
         * [Time seek](papertrail.md#time-seek)
 * [Pre-Commit Hooks](pre-commit.md)
+    * [Setup](pre-commit.md#setup)
     * [CodeSniffer](pre-commit.md#codesniffer)
     * [MessDetector](pre-commit.md#messdetector)
     * [PHPUnit/TDD](pre-commit.md#phpunittdd)
