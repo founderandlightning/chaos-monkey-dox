@@ -21,8 +21,11 @@ OR
     
     chmod +x .deploy/pre_commit.sh && .deploy/pre_commit.sh
 
+As you can see the command, Its giving read permissions to a file `.deploy/pre_commit.sh` and reading it.
+We used `pre-commit.sh` file as main file to list all the tasks to execute via pre-commit hook.
+Hence here we just call pre_commit.sh which has all the task listed.
 
-Here we configure pre-commit hooks to use below packages to analyse our code before commit.
+Here we configure pre-commit tasks/activities using below packages to analyse our code before commit.
 
 ## PHP CodeSniffer
 CodeSniffer is used to check code against syntax standards recommendations i.e. PSR2.
