@@ -54,7 +54,7 @@ It also accept various other options to customize make analysis and visually goo
 
 ## MessDetector
 
-To setup PHP CodeSniffer for your project follow below steps.
+To setup PHP Mess Detector for your project follow below steps.
 
 1. Add package to your project app via composer, run below command:
 
@@ -74,3 +74,58 @@ It also accept various options to make analysis customized and visually nice. [c
 4. Now call this command file in main file `pre_commit.sh` as shown above.
 
 ## PHPUnit/TDD
+
+I hope you already know about TDD, if not please check our [TDD sessions](https://github.com/sandymadaan/php_tdd_sessions)
+
+PHPunit is already intigrated with Laravel, so if you are using Laravel ignore step 1.
+
+To setup PHPunit for your project follow below steps. 
+
+1. Add package to your project app via composer, run below command:
+
+    `composer require phpunit/phpunit --dev`
+
+2. It will provide you command in vendors->bin i.e. `./vendor/bin/phpunit`. You can run this command to run your unit and feature test-case.
+
+3. By default phpunit use environment variables from main `.env` to provide different env variable (like db, queue, env etc) you can either update your `phpunit.xml` at application root OR simply copy paste main `.env` file to `.env.testing` and udpate variables values as per your testing enviroment.
+
+```
+<?xml version="1.0" encoding="UTF-8"?>
+<phpunit backupGlobals="false"
+         backupStaticAttributes="false"
+         bootstrap="vendor/autoload.php"
+         colors="true"
+         convertErrorsToExceptions="true"
+         convertNoticesToExceptions="true"
+         convertWarningsToExceptions="true"
+         processIsolation="false"
+         stopOnFailure="true">
+    <testsuites>
+        <testsuite name="Unit">
+            <directory suffix="Test.php">./tests/Unit</directory>
+        </testsuite>
+
+        <testsuite name="Feature">
+            <directory suffix="Test.php">./tests/Feature</directory>
+        </testsuite>
+    </testsuites>
+    <php>
+        <env name="APP_ENV" value="testing"/>
+        <env name="BCRYPT_ROUNDS" value="4"/>
+        <env name="CACHE_DRIVER" value="array"/>
+        <env name="MAIL_DRIVER" value="array"/>
+        <env name="QUEUE_CONNECTION" value="sync"/>
+        <env name="SESSION_DRIVER" value="array"/>
+        <env name="DATABASE_URL" value="postgres://postgres:postgres@localhost:5432/test_tdd"/>
+    </php>
+</phpunit>
+
+```
+
+You can further customize `phpunit.xml` to set different options. [check more](https://phpunit.de/manual/6.5/en/appendixes.configuration.html)
+
+3. Write this command with desired options to file `phpunit.sh`  and save it in dir `.deploy/commands`. below is sample command with options:
+
+`./vendor/bin/phpunit --color=always`
+
+4. Now call this command file in main file `pre_commit.sh` as shown above.
