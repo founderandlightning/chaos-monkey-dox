@@ -1,5 +1,7 @@
 # chaos-monkey-dox
-This repo contains the steps to re-create an application running on Heroku server (along with all the addons), on another Heroku app.
+
+Documentation to run chaos monkey using Heroku as the PAAS provider.
+Repo contains the steps to re-create an application running on Heroku server (along with all the addons), on another Heroku app.
 
 
 ## Table of contents:
