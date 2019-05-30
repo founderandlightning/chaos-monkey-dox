@@ -1,0 +1,52 @@
+version: 2
+jobs:
+  test-build:
+    working_directory: ~/laravel-demo
+    docker:
+      - image: ucreateit/php7.2:v0.2
+      - image: circleci/postgres:10
+    environment:
+      - APP_ENV: testing
+      - CACHE_DRIVER: file
+      - DB_DRIVER: postgres
+      - DB_USER: postgres
+      - DB_PASS: postgres
+      - DB_HOST: localhost
+      - DB_PORT: 5432
+      - DB_NAME: postgres
+    steps:
+      - checkout
+      - run:
+          name: Set DB URL
+          command: echo 'export DATABASE_URL=${DB_DRIVER}://${DB_USER}:${DB_PASS}@${DB_HOST}:${DB_PORT}/${DB_NAME}' >> $BASH_ENV
+      - run:
+          name: Check Dependency
+          command: 
+            sudo apt update -y
+      - run:
+          name: Install Dependency
+          command: 
+            sudo apt install -y libpq-dev
+      - run:
+          name: Install PHP extensions
+          command:
+            sudo docker-php-ext-install pdo pdo_pgsql exif
+      - restore_cache:
+          keys:
+          - v1-dependencies-{{ checksum "composer.json" }}
+          - v1-dependencies-
+      - run:
+          name: Composer Install
+          command: composer install -n --prefer-dist
+      - save_cache:
+          paths:
+            - ./vendor
+          key: v1-dependencies-{{ checksum "composer.json" }}
+      - run:
+          name: Run Tests
+          command: vendor/bin/phpunit --color=always
+workflows:
+  version: 2
+  Test-build:
+    jobs:
+      - test-build
