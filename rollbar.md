@@ -10,7 +10,7 @@ To integrate rollbar with your project you may follow below steps:
     ```
     composer require jenssegers/rollbar
     ```
-3. To make exceptions/errors to be reported, edit your Exception Handler i.e. `app/Exceptions/Handler.php` and add below code in already existing method:
+3. To make exceptions/errors to be reported, edit your Exception Handler i.e. `app/Exceptions/Handler.php` and add below code in report method:
 
 ```
     \Log::error($exception); //rollbar
