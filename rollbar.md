@@ -22,6 +22,9 @@ Fatal exceptions will always be sent to Rollbar.
 **Note**: all ENV credentials/details required to package are automatically added to Heroku ENV.
 
 ## Integrate with Trello and Slack
+
+**Note**: For organizational level integration you must be looged in as administrator.
+
 Above we have just setup reporting Exception/Error to rollbar. Now how rollbar will report that error to us. In ucreate we use 2 mediums for rollbar notification.
 
 1. Goto Rollbar dashboard via Heroku Adon (App `resources` tab)
