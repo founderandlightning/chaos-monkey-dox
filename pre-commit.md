@@ -1,6 +1,9 @@
 # Pre-Commit Hooks
 Pre-commits hooks helps us to execute any task before the commit. It can be used for analysing the code we have changed, any syntax, functionality issue. Can also run Tests before any code get commited and pushed to remote repo.
 
+## PHP
+Below setup and tools are used for PHP.
+
 ## Setup
 
 Pre-commit tasks can be configured as following below steps:
@@ -129,3 +132,7 @@ You can further customize `phpunit.xml` to set different options. [check more](h
 `./vendor/bin/phpunit --color=always`
 
 4. Now call this command file in main file `pre_commit.sh` as shown above.
+
+
+## Node.js
+Below setup and tools are used for Node.js.
