@@ -4,7 +4,7 @@ Pre-commits hooks helps us to execute any task before the commit. It can be used
 ## PHP
 Below setup and tools are used for PHP.
 
-## Setup
+### Setup
 
 Pre-commit tasks can be configured as following below steps:
 1. Open `.git/hooks` directory.
@@ -32,7 +32,7 @@ Hence here we just call pre_commit.sh which has all the task listed.
 
 Here we configure pre-commit tasks/activities using below packages to analyse our code before commit.
 
-## PHP CodeSniffer
+### PHP CodeSniffer
 CodeSniffer is used to check code against syntax standards recommendations i.e. PSR2.
 
 To setup PHP CodeSniffer for your project follow below steps.
@@ -55,7 +55,7 @@ It also accept various other options to customize make analysis and visually goo
 
 5.   
 
-## MessDetector
+### MessDetector
 
 To setup PHP Mess Detector for your project follow below steps.
 
@@ -76,7 +76,7 @@ It also accept various options to make analysis customized and visually nice. [c
 
 4. Now call this command file in main file `pre_commit.sh` as shown above.
 
-## PHPUnit/TDD
+### PHPUnit/TDD
 
 I hope you already know about TDD, if not please check our [TDD sessions](https://github.com/sandymadaan/php_tdd_sessions)
 
@@ -136,3 +136,6 @@ You can further customize `phpunit.xml` to set different options. [check more](h
 
 ## Node.js
 Below setup and tools are used for Node.js.
+
+### Setup
+Setup guidelines...
