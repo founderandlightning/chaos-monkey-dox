@@ -54,3 +54,4 @@ Repo contains the steps to re-create an application running on Heroku server (al
         * [MessDetector](pre-commit.md#messdetector)
         * [PHPUnit/TDD](pre-commit.md#phpunittdd)
     * [Node.js](pre-commit.md#nodejs)
+        * [Setup](pre-commit.md#setup-1)
