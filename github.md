@@ -1,5 +1,6 @@
 # Github
 This is guide for creating github account, new repository and upload code from local system to newly created repo.
+**Note**: Please create a repo if there is no repostiory exists for project or it has been deleted/unavailable (for any reason).
 
 ## Login/Signup on Github
 * Navigate to [Github](https://github.com/)
