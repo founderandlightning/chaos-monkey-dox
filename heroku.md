@@ -105,6 +105,8 @@ For Heroku to use your Procfile, add the Procfile to the root directory of your 
 You can register any available domain name for any of domain register service provider like [Godaddy](https://in.godaddy.com/), [Bigrock](https://www.bigrock.in/dod#/netcom-domain-deals), [Hostgator](https://www.hostgator.in/domain-registration) etc.
 If you wish to register a free domain name(with limit choices) you can register you domain on [freenom.com](https://www.freenom.com/en/index.html), [dot.tk](www.dot.tk)
 
+In below pic there is button `Configure SSL` that will be visible only if you have paid dynos.
+
 After registering/purchasing domain-name follow below steps:
 ![picture alt](https://raw.githubusercontent.com/suri4ucreate/chaos-monkey-dox/master/img/add-domain.png "Add Domain")
 
