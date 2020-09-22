@@ -41,6 +41,14 @@ During a 2 minute period a host handles 200 requests. The Apdex threshold T = 0.
 The remaining 10 were not handled properly or took longer than 2 seconds, so they are classified as Frustrated.
 The resulting Apdex score is 0.9: (170 + (20/2))/200 = 0.9.
 
+## Apdex levels
+Apdex tracks three response counts:
+
+**Satisfied**: The response time is less than or equal to T.
+**Tolerating**: The response time is greater than T and less than or equal to 4T. In this example, 4 x 1.2 = 4.8 seconds is the maximum tolerable response time.
+**Frustrated**: The response time is greater than 4T or the request returns a server-side error. A high error rate can cause you to have a satisfying average response time, yet a poor Apdex score.
+
+
 ## Alert for High Apdex Score
 
 
