@@ -27,6 +27,20 @@ To view data about application performance, end user experience, and server perf
 3. After being redirected via SSO to your account(production or staging app) on the New Relic site.
 4. Click on the application, it will take you to the Dashboard(APM) for Monitoring.
 
+## App apdex score
+The Apdex score is a ratio value of the number of satisfied and tolerating requests to the total requests made. Each satisfied request counts as one request, while each tolerating request counts as half a satisfied request.
+
+An Apdex score varies from 0 to 1, with 0 as the worst possible score (100% of response times were Frustrated), and 1 as the best possible score (100% of response times were Satisfied).
+
+Example Apdex score:
+
+During a 2 minute period a host handles 200 requests. The Apdex threshold T = 0.5 seconds (500ms). This value is arbitrary and is selected by the user.
+
+170 of the requests were handled within 500ms, so they are classified as Satisfied.
+20 of the requests were handled between 500ms and 2 seconds (2000 ms), so they are classified as Tolerating.
+The remaining 10 were not handled properly or took longer than 2 seconds, so they are classified as Frustrated.
+The resulting Apdex score is 0.9: (170 + (20/2))/200 = 0.9.
+
 ## Alert for High Apdex Score
 
 
