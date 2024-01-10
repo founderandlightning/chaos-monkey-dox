@@ -5,7 +5,7 @@ Repo contains the steps to re-create an application running on Heroku server (al
 
 
 ## Table of contents:
-* [Github setup](github.md)
+* [GitHub setup](github.md)
     * [Signup/Login](github.md#loginsignup-on-github)
     * [Create Repository](github.md#create-new-repository)
     * [Create an Organization](github.md#create-an-organization)
@@ -18,9 +18,9 @@ Repo contains the steps to re-create an application running on Heroku server (al
     * [Create 2 apps (UAT/Prod)](heroku.md#create-2-apps-uatprod)
     * [Create a pipeline](heroku.md#addattach-apps-to-pipeline)
     * [Add/Attach apps to pipeline](heroku.md#addattach-apps-to-pipeline)
+    * [Add Buildpack](heroku.md#add-buildpack)
     * [Configure addons (explain)](heroku.md#configure-addons-explain)
     * [Add ENV variables](heroku.md#add-env-variables)
-    * [Add Procfile](heroku.md#add-procfile)
     * [Register/Add domain name](heroku.md#registeradd-domain-name)
         * [Add PointDNS](heroku.md#add-pointdns)
         * [Add DNS records](heroku.md#add-dns-records)
@@ -47,6 +47,7 @@ Repo contains the steps to re-create an application running on Heroku server (al
         * [Search](papertrail.md#search)
         * [Save Searches](papertrail.md#save-searches)
         * [Time seek](papertrail.md#time-seek)
+* [AWS S3 Bucket](s3.md)
 * [Pre-Commit Hooks](pre-commit.md)
     * [PHP](pre-commit.md#php)
         * [Setup](pre-commit.md#setup)
